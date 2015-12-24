@@ -52,3 +52,12 @@ cacheSolve <- function(x, ...) {
   m
   
 }
+
+
+invMatrix <- matrix(sample.int(100, size=9), nrow = 3, ncol = 3)
+
+mat <- makeCacheMatrix(invMatrix)
+
+cacheSolve(mat)
+
+
